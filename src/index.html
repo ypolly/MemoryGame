@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Schmemory Game</title>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+
+  <h1>The memory game</h1>
+  <div>
+    <select>
+      <option disabled selected value> -- select an option -- </option>
+      <option value="4">4x4</option>
+      <option value="4">4x4</option>
+      <option value="6">4x6</option>
+    </select>
+    <button class="button restart">Start</button>
+    
+    <div>
+      <din class="moves"></din>
+      <div class="time"></div>
+    </div>
+    <div class="field"></div>
+
+    <div class="popup">
+      <div class="greetings">
+        <span class="close">&times;</span>
+        <p>Congrats! You won the game!</p>
+        <p class="result"></p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

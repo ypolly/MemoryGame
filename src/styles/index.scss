@@ -1,0 +1,104 @@
+body {
+  background-color: #123;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5vh;
+}
+
+.field {
+  height: 100vh;
+  height: 80vh;
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  margin: 5px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.blocked {
+  background-color: #00000042 !important;
+}
+
+
+.open {
+  transform: rotateY(180deg);
+}
+
+.frontside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #d3ddf0fb;
+  transform: rotateY(180deg);
+}
+
+.backside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #f3d88c;
+
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+
+.moves,
+.time {
+  display: inline-block;
+  color: aliceblue;
+  margin: 10px;
+  font-size: 3vh;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.greetings {
+  background-color: aliceblue;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 1vh;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button,
+select {
+  font-size: 3vh;
+}
